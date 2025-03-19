@@ -1,0 +1,46 @@
+{
+  "name": "nuxt4-minimal-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare & npx simple-git-hooks",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/icon": "1.12.0",
+    "@tailwindcss/vite": "^4.1.3",
+    "@vueuse/core": "^11.3.0",
+    "@vueuse/nuxt": "^11.1.0",
+    "lucide-vue-next": "^0.487.0",
+    "nuxt": "^3.16.0",
+    "reka-ui": "^2.2.0",
+    "shadcn-nuxt": "^2.0.1",
+    "tailwindcss": "^4.1.3",
+    "tw-animate-css": "^1.2.5",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.6.0",
+    "@nuxtjs/color-mode": "^3.5.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "eslint": "^9.13.0",
+    "lint-staged": "^15.5.0",
+    "simple-git-hooks": "^2.11.1",
+    "tailwind-merge": "^3.2.0",
+    "typescript": "^5.6.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "packageManager": "pnpm@9.12.2"
+}
