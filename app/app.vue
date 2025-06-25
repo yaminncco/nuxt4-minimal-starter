@@ -10,15 +10,20 @@
       </h2>
 
       <p class="max-w-lg font-medium text-muted-foreground text-md sm:text-xl">
-        This is a starter template for Nuxt 4 with Tailwind CSS, ShadcnUI, TypeScript, and other useful packages.
+        This is a starter template for Nuxt 4 with Tailwind CSS, Shadcn/Vue, TypeScript, and other useful packages.
       </p>
 
-      <Button>
-        <GithubIcon
-          class="size-4"
-          aria-hidden="true"
-        />
-        Get Started
+      <Button as-child>
+        <a
+          href="https://github.com/yaminncco/nuxt4-minimal-starter"
+          target="_blank"
+        >
+          <GithubIcon
+            class="size-4"
+            aria-hidden="true"
+          />
+          Repo
+        </a>
       </Button>
     </div>
   </section>

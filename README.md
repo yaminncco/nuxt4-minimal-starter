@@ -1,41 +1,31 @@
-# Nuxt Minimal Starter
+# Nuxt 4 Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A minimal starter template for Nuxt 4 with Tailwind CSS, Shadcn/Vue, TypeScript, and other useful packages.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Nuxt 4 Ready
+- TypeScript
+- Tailwind CSS v4
+- Shadcn/Vue + RekaUI components
+- Light/Dark color mode
+- Over 200,000 open-source vector icons via Iconify
+- Vueuse - Vue 3 Composition API utilities
+- Eslint
+- Format & Lint pre-commit (simple-git-hooks & lint-staged)
+
+## Getting Started
+
+Install dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +33,19 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Add Shadcn/Vue components
+
+```bash
+pnpm dlx shadcn-vue@latest add <component-name>
+```
+
+See the [Shadcn-vue documentation](https://www.shadcn-vue.com/docs/introduction.html) on how to use.
