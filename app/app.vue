@@ -2,10 +2,10 @@
   <section
     class="relative overflow-hidden h-screen max-h-dvh flex justify-center items-center bg-background text-foreground"
   >
-    <div class="absolute inset-0 opacity-50 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-[size:6rem_4rem]" />
+    <div class="absolute inset-0 opacity-50 bg-[linear-gradient(to_right,var(--border)_1px,transparent_1px),linear-gradient(to_bottom,var(--border)_1px,transparent_1px)] bg-size-[6rem_4rem]" />
 
     <div class="relative flex flex-col items-center text-center gap-6 sm:gap-8">
-      <h2 class="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-4xl font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-6xl md:text-8xl">
+      <h2 class="font-heading bg-linear-to-r from-foreground to-muted-foreground bg-clip-text text-4xl font-semibold leading-tight text-transparent drop-shadow-2xl sm:text-6xl md:text-8xl">
         Nuxt4 Minimal Starter
       </h2>
 
@@ -18,11 +18,15 @@
           href="https://github.com/yaminncco/nuxt4-minimal-starter"
           target="_blank"
         >
-          <GithubIcon
+          <Icon
+            name="simple-icons:github"
+            class="text-base"
+          />
+          Repo
+          <ExternalLink
             class="size-4"
             aria-hidden="true"
           />
-          Repo
         </a>
       </Button>
     </div>
@@ -30,5 +34,5 @@
 </template>
 
 <script lang="ts" setup>
-import { GithubIcon } from 'lucide-vue-next'
+import { ExternalLink } from '@lucide/vue'
 </script>

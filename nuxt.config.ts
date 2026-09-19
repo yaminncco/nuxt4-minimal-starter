@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
+    '@nuxt/fonts',
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
@@ -24,7 +25,8 @@ export default defineNuxtConfig({
     ],
     optimizeDeps: {
       include: [
-        'lucide-vue-next',
+        '@lucide/vue',
+        '@vueuse/core',
         'class-variance-authority',
         'reka-ui',
         'clsx',
@@ -36,6 +38,15 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  fonts: {
+    defaults: {
+      subsets: ['latin'],
+      styles: ['normal'],
+    },
+    families: [
+      { name: 'Inter', provider: 'google', weights: [400, 500, 600, 700], display: 'swap' },
+    ],
   },
   shadcn: {
     prefix: '',
